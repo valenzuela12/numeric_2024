@@ -20,6 +20,8 @@ Completed:
 * a fairly detailed ``.gitignore`` file to try to avoid file that shouldn't be tracked
   finding their way into the repo
 
+* added UBC EOAS favicon for browser tabs and bookmarks
+
 
 Work in progress:
 
@@ -35,7 +37,22 @@ Work in progress:
 Questions:
 
 * License?
+
 * Copyright notices in files?
+
+* Project information in docs? presently:
+
+  ::
+
+    project = "Numeric course"
+    copyright = "Numeric project"
+    author = "Numeric Project"
+    version = ""
+    release = "0.1"
+
+* Add list updated date to docs page footer?
+
+* Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/
 
 
 Notes:
