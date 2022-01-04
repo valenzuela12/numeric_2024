@@ -6,12 +6,10 @@ Features
 
 Completed:
 
-* Nothing yet :-)
+* conda environment: ``envs/environment.yaml``
 
 
 Work in progress:
-
-* conda environment: ``envs/environment.yaml``
 
 * `pre-commit`_ hooks: ``.pre-commit-config.yaml``
 
@@ -35,3 +33,12 @@ Questions:
 
 * License?
 * Copyright notices in files?
+
+
+Notes:
+
+* I use `Mambaforge`_
+  (specifically Mambaforge-pypy3)
+  as my conda environment/package manager
+
+.. _Mambaforge: https://github.com/conda-forge/miniforge#mambaforge

@@ -1,0 +1,32 @@
+# conda environment description file for repo refactoring experiments for
+# 2022 edition of EOAS 511/ATSC 409 Numeric course
+#
+# Create a conda environment for working on course notebooks and documentation,
+# and refactoring experiments with:
+#
+#   $ cd numeric-refactor
+#   $ mamba env create -f envs/environment.yaml
+#   $ conda activate numeric-refactor
+
+name: numeric-refactor
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # The basics
+  - python=3.10
+  - pip
+
+  # To run Jupyter notebooks
+  - jupyterlab
+
+  # For calculations and visualization
+  - scipy
+  - matplotlib
+
+  # For documentation
+  - nbsphinx
+  - sphinx
+  - sphinx_rtd_theme
