@@ -22,17 +22,21 @@ Completed:
 
 * added UBC EOAS favicon for browser tabs and bookmarks
 
-
-Work in progress:
-
-* GitHub Actions workflow: ``.github/workflows/build-site.yaml``
+* GitHub Actions workflow: ``.github/workflows/sphinx-to-gh-pages.yaml``
 
   * build Sphinx docs
-    (including Jupyter notebooks)
     and publish rendered docs to ``gh-pages`` branch so that they are visible at
     https://douglatornell.github.io/numeric-refactor/
     whenever commits are pushed to the ``main`` branch
 
+
+Work in progress:
+
+* refactor an example
+  (Lab 1)
+  of a notebook and supporting scripts,
+  images,
+  etc. from ``jupytext``-based workflow and multiple directories into ``docs/`` tree
 
 Questions:
 
