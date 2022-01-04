@@ -1,0 +1,19 @@
+# conda environment description file for GitHub Actions workflow that
+# builds the course site from docs/ via Sphinx and deploys them to
+# github.io via the gh-pages branch
+
+name: numeric-gh-pages
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # The basics
+  - python=3.10
+  - pip
+
+  # To build the web site
+  - nbsphinx
+  - sphinx
+  - sphinx_rtd_theme

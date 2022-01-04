@@ -26,7 +26,7 @@ dependencies:
   - scipy
   - matplotlib
 
-  # For documentation
+  # To build the web site
   - nbsphinx
   - sphinx
   - sphinx_rtd_theme
