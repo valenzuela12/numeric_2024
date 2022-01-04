@@ -17,6 +17,9 @@ Completed:
 
   .. _pre-commit: https://pre-commit.com/
 
+* a fairly detailed ``.gitignore`` file to try to avoid file that shouldn't be tracked
+  finding their way into the repo
+
 
 Work in progress:
 
