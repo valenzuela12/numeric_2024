@@ -38,7 +38,9 @@ Work in progress:
   images,
   etc. from ``jupytext``-based workflow and multiple directories into ``docs/`` tree
 
-Questions:
+
+Questions
+---------
 
 * License?
 
@@ -59,7 +61,8 @@ Questions:
 * Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/
 
 
-Notes:
+Notes
+-----
 
 * I use `Mambaforge`_
   (specifically Mambaforge-pypy3)
