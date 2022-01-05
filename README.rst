@@ -55,9 +55,9 @@ Questions
 
 * Add list updated date to website page footer?  Yes.
 
-* Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/
+* Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/   Switch the theme so its clear we are on a new site.  I like Sandstone.
 
-* Is ``numlabs.show_figure`` important? It's not mentioned anywhere in narrative pages or notebooks
+* Is ``numlabs.show_figure`` important? It's not mentioned anywhere in narrative pages or notebooks   Probably cruft.
 
 
 Notes
