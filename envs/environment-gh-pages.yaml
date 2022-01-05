@@ -14,6 +14,7 @@ dependencies:
   - pip
 
   # To build the web site
+  - ipython
   - nbsphinx
   - sphinx
   - sphinx_rtd_theme
