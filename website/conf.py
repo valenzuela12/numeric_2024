@@ -20,6 +20,7 @@ release = "0.1"
 # ones.
 extensions = [
     "nbsphinx",
+    "sphinx.ext.githubpages",
     "sphinx.ext.mathjax",
 ]
 
