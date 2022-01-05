@@ -23,11 +23,6 @@ extensions = [
     "sphinx.ext.mathjax",
 ]
 
-# The suffix(es) of source filenames.
-# You can specify multiple suffix as a list of string:
-#
-source_suffix = ['.rst','.ipynb']
-
 # The master toctree document.
 master_doc = "index"
 
@@ -86,3 +81,8 @@ html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 html_show_copyright = True
+
+
+# -- Extension configuration -------------------------------------------------
+nbsphinx_allow_errors = True
+jupyter_execute_notebooks = "off"
