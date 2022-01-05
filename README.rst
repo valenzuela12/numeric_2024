@@ -71,3 +71,7 @@ Notes
   as my conda environment/package manager
 
 .. _Mambaforge: https://github.com/conda-forge/miniforge#mambaforge
+
+* ``<div>`` tags around display math in notebooks prevent math rendering in VSCode but not
+  ``jupyter lab`` or ``jupyter notebook``.
+  Removing them fixes rendering in VSCode and doesn't affect ``lab`` or ``notebook`` rendering.
