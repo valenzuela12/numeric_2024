@@ -56,7 +56,7 @@ html_short_title = "Numeric Course"
 html_static_path = ["_static"]
 
 # The name of an image file (within the static path) to use as favicon of the
-# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+# website.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 html_favicon = "_static/UBC_EOAS_favicon.ico"
 

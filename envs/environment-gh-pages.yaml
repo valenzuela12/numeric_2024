@@ -1,5 +1,5 @@
 # conda environment description file for GitHub Actions workflow that
-# builds the course site from docs/ via Sphinx and deploys them to
+# builds the course site from website/ via Sphinx and deploys them to
 # github.io via the gh-pages branch
 
 name: numeric-gh-pages

@@ -1,4 +1,4 @@
 {
-    "restructuredtext.confPath": "${workspaceFolder}/docs",
+    "restructuredtext.confPath": "${workspaceFolder}/website",
     "python.defaultInterpreterPath": "~/conda_envs/numeric-refactor/bin/python3.10"
 }

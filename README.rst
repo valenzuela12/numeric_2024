@@ -24,8 +24,8 @@ Completed:
 
 * GitHub Actions workflow: ``.github/workflows/sphinx-to-gh-pages.yaml``
 
-  * build Sphinx docs
-    and publish rendered docs to ``gh-pages`` branch so that they are visible at
+  * build Sphinx website
+    and publish its html, etc. to ``gh-pages`` branch so that it is updated at
     https://douglatornell.github.io/numeric-refactor/
     whenever commits are pushed to the ``main`` branch
 
@@ -36,7 +36,7 @@ Work in progress:
   (Lab 1)
   of a notebook and supporting scripts,
   images,
-  etc. from ``jupytext``-based workflow and multiple directories into ``docs/`` tree
+  etc. from ``jupytext``-based workflow and multiple directories into ``website/`` tree
 
 
 Questions
@@ -46,7 +46,7 @@ Questions
 
 * Copyright notices in files?
 
-* Project information in docs? presently:
+* Project information in website config? presently:
 
   ::
 
@@ -56,7 +56,7 @@ Questions
     version = ""
     release = "0.1"
 
-* Add list updated date to docs page footer?
+* Add list updated date to website page footer?
 
 * Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/
 
