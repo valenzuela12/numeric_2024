@@ -29,9 +29,6 @@ Completed:
     https://douglatornell.github.io/numeric-refactor/
     whenever commits are pushed to the ``main`` branch
 
-
-Work in progress:
-
 * refactor an example
   (Lab 1)
   of a notebook and supporting scripts,
@@ -80,3 +77,40 @@ Notes
   At least some are due to displaymath having text before or after it on the same line;
   easily resolved by adding newlines,
   but tedious...
+
+* Sphinx warns of various markup issues in lab1:
+
+  ::
+
+    reading sources... [100%] notebooks/lab1/01-lab1
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:819: WARNING: Title level inconsistent:
+
+    Example Four
+    ^^^^^^^^^^^^
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:829: WARNING: Title level inconsistent:
+
+    Example Five
+    ^^^^^^^^^^^^
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:954: WARNING: Title level inconsistent:
+
+    Demo: Interpolation
+    ^^^^^^^^^^^^^^^^^^^
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:1086: WARNING: Title level inconsistent:
+
+    Interpolation Quiz
+    ^^^^^^^^^^^^^^^^^^
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:1221: WARNING: Title level inconsistent:
+
+    Discretization Quiz
+    ^^^^^^^^^^^^^^^^^^^
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:1278: WARNING: Title level inconsistent:
+
+    Summary
+    ^^^^^^^
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:1329: WARNING: Title level inconsistent:
+
+    Example Six
+    ^^^^^^^^^^^
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:1972: WARNING: Unexpected indentation.
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:1969: WARNING: Inline interpreted text or phrase reference start-string without end-string.
+    /media/doug/warehouse/EOAS-teaching/numeric-refactor/website/notebooks/lab1/01-lab1.ipynb:1973: WARNING: Block quote ends without a blank line; unexpected unindent.

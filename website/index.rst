@@ -8,6 +8,6 @@ and imported modules in the :file:`website/` tree.
 
 
 .. toctree::
-   :caption: Contents:
+   :maxdepth: 1
 
-   foo.ipynb
+   Course/lab descriptions <notebook_toc>
