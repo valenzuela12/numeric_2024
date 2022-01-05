@@ -39,21 +39,21 @@ Completed:
 Questions
 ---------
 
-* License?
+* License?   Given that it is mostly text in the notebooks, lets go creative commons.  I'm using: Worksheets for Numeric Course by Susan Allen, Rachel White, Phil Austin and The University of British Columbia are licensed under a Creative Commons Attribution 3.0 Unported License.  Feel free to add yourself or refer to a contributors list.
 
-* Copyright notices in files?
+* Copyright notices in files?  Yes please, but I'll reach out to Phil to double check.
 
 * Project information in website config? presently:
 
   ::
 
-    project = "Numeric course"
-    copyright = "Numeric project"
-    author = "Numeric Project"
-    version = ""
-    release = "0.1"
+    project = "Numeric course"                  Fine
+    copyright = "Numeric project"               Change to contributors and add a contributors page?
+    author = "Numeric Project"                  Fine
+    version = ""                                202201 
+    release = "0.1"                             what do you suggest?
 
-* Add list updated date to website page footer?
+* Add list updated date to website page footer?  Yes.
 
 * Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/
 
