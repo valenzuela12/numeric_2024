@@ -60,6 +60,8 @@ Questions
 
 * Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/
 
+* Is ``numlabs.show_figure`` important? It's not mentioned anywhere in narrative pages or notebooks
+
 
 Notes
 -----
