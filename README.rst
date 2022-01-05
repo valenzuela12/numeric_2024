@@ -75,3 +75,8 @@ Notes
 * ``<div>`` tags around display math in notebooks prevent math rendering in VSCode but not
   ``jupyter lab`` or ``jupyter notebook``.
   Removing them fixes rendering in VSCode and doesn't affect ``lab`` or ``notebook`` rendering.
+
+* There are a bunch of other displaymath rendering issues when the notebooks are viewed in VSCode.
+  At least some are due to displaymath having text before or after it on the same line;
+  easily resolved by adding newlines,
+  but tedious...
