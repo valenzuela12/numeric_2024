@@ -10,4 +10,6 @@ and imported modules in the :file:`website/` tree.
 .. toctree::
    :maxdepth: 1
 
+   Getting started <getting_started>
+
    Course/lab descriptions <notebook_toc>
