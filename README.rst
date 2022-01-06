@@ -17,7 +17,7 @@ etc. was a success:
   * fork the repo on GitHub and clone their for to their laptops
   * set up an ``upstream`` remote to allow them to pull updates from the instructor-maintained repo
   * create personally named copies of the lab notebooks to avoid merge conflicts with updates
-    from ``upstream``
+  from ``upstream``
   * commit their changes and push them to their GitHub forks
 
 Next steps:
