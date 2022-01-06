@@ -39,9 +39,19 @@ Completed:
 Questions
 ---------
 
-* License?   Given that it is mostly text in the notebooks, lets go creative commons.  I'm using: Worksheets for Numeric Course by Susan Allen, Rachel White, Phil Austin and The University of British Columbia are licensed under a Creative Commons Attribution 3.0 Unported License.  Feel free to add yourself or refer to a contributors list.
+* License?
 
-* Copyright notices in files?  Yes please, but I'll reach out to Phil to double check.
+  Susan says:
+
+      Given that it is mostly text in the notebooks, lets go creative commons.  I'm using: Worksheets for Numeric Course by Susan Allen, Rachel White, Phil Austin and The University of British Columbia are licensed under a Creative Commons Attribution 3.0 Unported License.  Feel free to add yourself or refer to a contributors list.
+
+  I suggest Creative Commons Attribution 4.0 International, the updated version of 3.0 Unported
+
+* Copyright notices in files?
+
+  Susan says:
+
+      Yes please, but I'll reach out to Phil to double check.
 
 * Project information in website config? presently:
 
@@ -50,14 +60,41 @@ Questions
     project = "Numeric course"                  Fine
     copyright = "Numeric project"               Change to contributors and add a contributors page?
     author = "Numeric Project"                  Fine
-    version = ""                                202201 
+    version = ""                                202201
     release = "0.1"                             what do you suggest?
 
-* Add list updated date to website page footer?  Yes.
+  I suggest:
 
-* Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/   Switch the theme so its clear we are on a new site.  I like Sandstone.
+  ::
 
-* Is ``numlabs.show_figure`` important? It's not mentioned anywhere in narrative pages or notebooks   Probably cruft.
+    version = "22.1"
+    release = version
+
+  Version follows the ``YY.N`` pattern we use for SalishSeaCast packages that is
+  somewhat in line with https://calver.org/ without getting hung up on the month
+  in the version;
+  ``N`` is just a sequential number that gets incremented when the accumulated changes
+  are deemed to be "significant".
+  I don't really expect there to be a ``22.2`` version of the course.
+  Next will likely be ``24.1``.
+
+
+* Add list updated date to website page footer?
+
+  Susan says:
+
+      Yes.
+
+* Stay with the readthedocs theme? Gallery of some alternatives at https://sphinx-themes.org/
+  Susan says:
+
+    Switch the theme so its clear we are on a new site.  I like Sandstone.
+
+* Is ``numlabs.show_figure`` important? It's not mentioned anywhere in narrative pages or notebooks
+
+  Susan says:
+
+    Probably cruft.
 
 
 Notes
