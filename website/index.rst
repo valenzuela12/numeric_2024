@@ -12,4 +12,6 @@ and imported modules in the :file:`website/` tree.
 
    Getting started <getting_started>
 
+   Undergrad Syllabus  <ugradsyllabus>
+
    Course/lab descriptions <notebook_toc>
