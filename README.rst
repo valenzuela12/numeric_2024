@@ -14,6 +14,7 @@ etc. was a success:
   and ``numlabs/`` trees.
 
 * Students can:
+
   * fork the repo on GitHub and clone their for to their laptops
   * set up an ``upstream`` remote to allow them to pull updates from the instructor-maintained repo
   * create personally named copies of the lab notebooks to avoid merge conflicts with updates
