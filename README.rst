@@ -1,6 +1,38 @@
 Numeric Course Repo Refactoring Experiment
 ==========================================
 
+The initial experiment of creating a repo with a single-truth copy of the notebooks
+and related modules,
+images,
+PDFs,
+etc. was a success:
+
+* The ``website/`` tree is auto-published to GitHub Pages via an on-push GitHub Actions workflow
+  and the ``gh-pages`` branch.
+
+* Instructors can edit the lab notebooks and code modules in the ``notebooks/``
+  and ``numlabs/`` trees.
+
+* Students can:
+  * fork the repo on GitHub and clone their for to their laptops
+  * set up an ``upstream`` remote to allow them to pull updates from the instructor-maintained repo
+  * create personally named copies of the lab notebooks to avoid merge conflicts with updates
+    from ``upstream``
+  * commit their changes and push them to their GitHub forks
+
+Next steps:
+
+* Pull the rest of the content from ``numeric_2022`` into this repo
+
+* Do the stuff flowing from answers in the Questions section below
+
+* Transfer the "ready enough for day 1" repo to Rachel's ownership on GitHub
+
+* Tidy up notebook rendering and mark-up issues
+
+See https://github.com/users/douglatornell/projects/1/views/4?layout=board for details.
+
+
 Features
 --------
 
@@ -43,7 +75,11 @@ Questions
 
   Susan says:
 
-      Given that it is mostly text in the notebooks, lets go creative commons.  I'm using: Worksheets for Numeric Course by Susan Allen, Rachel White, Phil Austin and The University of British Columbia are licensed under a Creative Commons Attribution 3.0 Unported License.  Feel free to add yourself or refer to a contributors list.
+      Given that it is mostly text in the notebooks, lets go creative commons.
+      I'm using: Worksheets for Numeric Course by Susan Allen, Rachel White, Phil Austin
+      and The University of British Columbia are licensed under a
+      Creative Commons Attribution 3.0 Unported License.
+      Feel free to add yourself or refer to a contributors list.
 
   I suggest Creative Commons Attribution 4.0 International, the updated version of 3.0 Unported
 
