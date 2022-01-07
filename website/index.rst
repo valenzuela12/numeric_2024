@@ -10,4 +10,6 @@ Numerical Methods
 
    Grad Syllabus <gradsyllabus>
 
+   Detailed Schedule <schedule>
+
    Course/lab descriptions <notebook_toc>
