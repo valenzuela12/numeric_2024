@@ -88,9 +88,9 @@ to illness, “away games” for athletes etc. In-class paper worksheets
 are done as a group and are to handed in (one worksheet only per
 group) at the end of the worksheet time.
 
-The project will be done as a group. The topic of the project should
+**The project will be done as a group. The topic of the project should
 be selected from a list provided by the instructors or in consultation
-with the instructors.
+with the instructors.**
 
 The laboratory exercisse sets are to be uploaded to the course CANVAS page. Sometimes, rather than a large series of plots, you may wish to
 include a summarizing table. If you do not understand the scope of a
@@ -109,7 +109,7 @@ Meeting Times
 -------------
 
 1400-1600 Mondays, Room 127, Earth and Oceans Sciences (EOS) Main
-
+(online for at least the first two classes)
 
 Contents
 --------

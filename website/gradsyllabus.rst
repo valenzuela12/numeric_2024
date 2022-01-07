@@ -54,6 +54,7 @@ Meeting Times
 -------------
 
 1400-1600 Mondays, Room 127, Earth and Oceans Sciences (EOS) Main
+(online in zoom for at least the first two classes)
 
 Grades
 ------
