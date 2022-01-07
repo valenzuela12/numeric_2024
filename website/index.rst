@@ -12,4 +12,6 @@ Numerical Methods
 
    Detailed Schedule <schedule>
 
+   Optional texts <texts>
+
    Course/lab descriptions <notebook_toc>
