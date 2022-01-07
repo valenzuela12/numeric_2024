@@ -19,6 +19,6 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 # Custom html target to rsync PDFs into $BUILDDIR after Sphinx has created it
-html:"
+html:
 	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html" $(SPHINXOPTS) $(O)
 	rsync -av rubrics/*.pdf "$(BUILDDIR)/html/rubrics"
