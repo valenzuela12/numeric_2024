@@ -84,7 +84,7 @@ to illness, “away games” for athletes etc. In-class paper worksheets
 are done as a group and are to handed in (one worksheet only per
 group) at the end of the worksheet time.
 
-**bold** The project will be done in groups of three to four. It is to be chosen in consultation with your research supervisors and the instructors.
+** The project will be done in groups of three to four. It is to be chosen in consultation with your research supervisors and the instructors. **
 
 
 The laboratory problem sets are to be uploaded to the course CANVAS page. Sometimes, rather than a large series of plots, you may wish to
