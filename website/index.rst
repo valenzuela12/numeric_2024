@@ -15,3 +15,5 @@ Numerical Methods
    Optional texts <texts>
 
    Course/lab descriptions <notebook_toc>
+
+   Rubrics <rubrics>
