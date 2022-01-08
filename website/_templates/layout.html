@@ -1,0 +1,10 @@
+{% extends "!layout.html" %}
+
+{% block header %}
+<!-- remove Mozilla link tab from upper right corner of page -->
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  <!-- remove loading of Mozilla tabzilla.js script -->
+{% endblock %}

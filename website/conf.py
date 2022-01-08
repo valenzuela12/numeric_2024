@@ -5,6 +5,11 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 
+import os
+
+import mozilla_sphinx_theme
+
+
 # -- Project information -----------------------------------------------------
 
 project = "Numeric course"
@@ -37,16 +42,19 @@ exclude_patterns = [
     "**.ipynb_checkpoints",
 ]
 
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ["_templates"]
+
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = "mozilla"
+html_theme_path = [os.path.dirname(mozilla_sphinx_theme.__file__)]
 html_style = None
-html_theme_options = {"collapse_navigation": True}
-using_rtd_theme = True
+using_rtd_theme = False
 
 # A shorter title for the navigation bar.
 html_short_title = "Numeric Course"

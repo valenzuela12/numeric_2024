@@ -26,10 +26,13 @@ dependencies:
   - scipy
   - matplotlib
 
-  # To build the web site
+  # To build the website
   - nbsphinx
   - sphinx
-  - sphinx_rtd_theme
 
   # For repo QA
   - pre-commit
+
+  - pip:
+    # Website theme (aka Sandstone)
+    - mozilla_sphinx_theme

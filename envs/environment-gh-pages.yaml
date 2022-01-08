@@ -13,8 +13,11 @@ dependencies:
   - python=3.10
   - pip
 
-  # To build the web site
+  # To build the website
   - ipython
   - nbsphinx
   - sphinx
-  - sphinx_rtd_theme
+
+  - pip:
+    # Website theme (aka Sandstone)
+    - mozilla_sphinx_theme
