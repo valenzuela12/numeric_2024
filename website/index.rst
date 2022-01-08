@@ -16,6 +16,4 @@ Numerical Methods
 
    Course/lab descriptions <notebook_toc>
 
-   Weekly notes <week_notes>
-
    Rubrics <rubrics>
