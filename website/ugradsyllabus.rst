@@ -260,7 +260,7 @@ COVID Safety in the Classroom
 -----------------------------
 
 The first two classes, January 10 and January 17, will be held on
-zoom.  See course canvas site for zoom link
+zoom.  See course canvas site for zoom link.
 
 If we return to the classroom on January 24, we will add a COVID
 safety statement here.
