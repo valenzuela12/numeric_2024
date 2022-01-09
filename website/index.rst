@@ -1,10 +1,10 @@
-Numerical Methods
+Numerical Techniques for Atmosphere, Ocean and Earth Scientists
 =================
 
+Welcome! Start by reading the appropriate syllabus below. The "Getting Started" page will take you through the setup you will need to participate in this course - we will help you go through this in the first class.
+ 
 .. toctree::
    :maxdepth: 1
-
-   Getting started <getting_started>
 
    Undergrad Syllabus <ugradsyllabus>
 
@@ -14,6 +14,8 @@ Numerical Methods
 
    Optional texts <texts>
 
-   Course/lab descriptions <notebook_toc>
+   Getting started <getting_started>
+
+   Labs <notebook_toc>
 
    Rubrics <rubrics>
