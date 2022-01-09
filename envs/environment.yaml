@@ -4,11 +4,11 @@
 # Create a conda environment for working on course notebooks and documentation,
 # and refactoring experiments with:
 #
-#   $ cd numeric-refactor
-#   $ mamba env create -f envs/environment.yaml
-#   $ conda activate numeric-refactor
+#   $ cd numeric_2022
+#   $ conda env create -f envs/environment.yaml
+#   $ conda activate numeric_2022
 
-name: numeric-refactor
+name: numeric_2022
 
 channels:
   - conda-forge
