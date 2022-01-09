@@ -12,7 +12,7 @@ import mozilla_sphinx_theme
 
 # -- Project information -----------------------------------------------------
 
-project = "Numeric course"
+project = "Numerical Methods Course"
 copyright = "Numeric project"
 author = "Numeric Project"
 release = "0.1"
