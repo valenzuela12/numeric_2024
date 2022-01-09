@@ -54,7 +54,10 @@ Meeting Times
 -------------
 
 1400-1600 Mondays, Room 127, Earth and Oceans Sciences (EOS) Main
-(online in zoom for at least the first two classes)
+
+Important Note: this course will be online for a number of weeks at the beginning of the term, including assessments.  We will start in-person meetings on a date yet to be determined by the University.  At the very earliest, this will be Jan 24th.  This date may be updated as time goes on.  When we resume in-person activities, we will meet in our scheduled classroom space on campus.  For meetings prior to that time, we will meet on Zoom: you can find the zoom link on the home page of our canvas site: https://canvas.ubc.ca/courses/82440/pages/numerical-techniques-2022
+
+
 
 Grades
 ------
@@ -221,7 +224,7 @@ COVID Safety in the Classroom
 -----------------------------
 
 The first two classes, January 10 and January 17, will be held on
-zoom.  Details to follow.
+zoom. See course canvas site for zoom link. 
 
 If we return to the classroom on January 24, we will add a COVID
 safety statement here.
