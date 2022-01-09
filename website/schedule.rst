@@ -8,7 +8,7 @@ LNPD = Last No Penalty Date
 **G**: Graduate Class (EOSC 511): `G dates as a calendar <schedules/Graduate_Schedule.pdf>`_
 
 January
-----------
+-------
 
  * Monday Jan 10 : First Class
 
