@@ -3,7 +3,7 @@ Getting started
 
 .. toctree::
 
-    Installation <getting_started/installing_jupytext.ipynb>
+    Installation <getting_started/installing_jupyter.ipynb>
 
     Python introduction <https://phaustin.github.io/pyman>
 
