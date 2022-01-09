@@ -35,7 +35,7 @@ based laboratory course. The computer will lead you through the
 laboratory (like a set of lab notes) and you will answer problems most
 of which use the computer. The course consists of three parts. A set of
 required interactive, computer based laboratory exercises, a choice of
-optional laboratory exercises and a project. The project will be a
+elective laboratory exercises and a project. The project will be a
 group project determined through consultation between the instructors, the student and their
 supervisors.
 
@@ -121,7 +121,7 @@ webpage.
 
 -  Laboratory Seven: One Week
 
-Optional Laboratories
+Elective Laboratories
 ---------------------
 
 Choose one of the following concentration. Time scale two and a half weeks.
@@ -159,7 +159,7 @@ Project
 -------
 
 -  Done in groups of three. Chosen in consultation with your research supervisors and the
-   instructors. Should be choosen before the optional labs.
+   instructors. Should be choosen before the elective labs.
 
 -  Time scale three and half weeks.
 
