@@ -3,9 +3,9 @@ Dates
 
 LNPD = Last No Penalty Date
 
-**U**: Undergraduate Class (ATSC 409): `U dates as a calendar <schedules/Undergraduate_Schedule.pdf>`_
+**U**: Undergraduate Class (ATSC 409): `U dates as a calendar <_static/schedules/Undergraduate_Schedule.pdf>`_
 
-**G**: Graduate Class (EOSC 511): `G dates as a calendar <schedules/Graduate_Schedule.pdf>`_
+**G**: Graduate Class (EOSC 511): `G dates as a calendar <_static/schedules/Graduate_Schedule.pdf>`_
 
 January
 -------
@@ -145,5 +145,3 @@ April
 * Apr 8, 6 pm, **G** **U**  Second iPeer evaluation
 
 * Apr 8, 6 pm: **G** **U** Project
-
-
