@@ -1,7 +1,6 @@
 # %%
 import matplotlib.pyplot as plt
-import context
-from numlabs.lab2.lab2_functions import euler, leapfrog, runge, midpoint
+from lab2_functions import euler, leapfrog, runge, midpoint
 import numpy as np
 
 # %%
