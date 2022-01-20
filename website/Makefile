@@ -22,5 +22,3 @@ help:
 html:
 	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html" $(SPHINXOPTS) $(O)
 	rsync -av rubrics/*.pdf "$(BUILDDIR)/html/rubrics"
-	rsync -av schedules/*.pdf "$(BUILDDIR)/html/schedules"
-
