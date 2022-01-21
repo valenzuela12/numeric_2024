@@ -12,11 +12,11 @@ import mozilla_sphinx_theme
 
 # -- Project information -----------------------------------------------------
 
-project = "Numerical Methods Course"
-copyright = "Numeric project"
-author = "Numeric Project"
-release = "0.1"
-
+project = "Numeric course"
+author = "Numeric Project Contributors"
+copyright = "1995 – present"
+version = "22.1"
+release = version
 
 # -- General configuration ---------------------------------------------------
 
