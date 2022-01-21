@@ -14,7 +14,7 @@ import mozilla_sphinx_theme
 
 project = "Numeric course"
 author = "Numeric Project Contributors"
-copyright = "199? – present"
+copyright = "1995 – present"
 version = "22.1"
 release = version
 
