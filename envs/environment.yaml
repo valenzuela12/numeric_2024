@@ -23,6 +23,7 @@ dependencies:
   - jupyterlab
 
   # For calculations and visualization
+  - pandas
   - scipy
   - matplotlib
 
