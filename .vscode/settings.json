@@ -3,6 +3,8 @@
     "python.defaultInterpreterPath": "~/conda_envs/numeric-refactor/bin/python3.10",
     "cSpell.words": [
         "gradsyllabus",
-        "ugradsyllabus"
+        "neighbouring",
+        "ugradsyllabus",
+        "wavenumber"
     ]
 }
