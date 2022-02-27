@@ -7,7 +7,7 @@ import matplotlib.cm as cmx
 import matplotlib.colorbar as colorbar
 import numpy as np
 
-def initialize(timesteps):
+def initialize(timesteps, lab_example=False):
     ''' initialize the physical system, horizontal grid size, etc
     '''
     # below are the parameters that can be varied
@@ -19,6 +19,12 @@ def initialize(timesteps):
     c_0 = 1
     alpha = 0.01
     epsilon = 0.0001
+
+    if lab_example:
+        Numpoints = 77
+        shift = 7
+        alpha = 0.1
+        dt = 0.9
 
 # create the concentration matrix and initialize it
     cmatrix = np.zeros((timesteps+1, Numpoints+4))
@@ -48,7 +54,7 @@ def advect3_gettable(order, Numpoints):
     temp = np.zeros(5)
     ltable = np.zeros((order + 1, 5))
 
-    fname = 'Tables/l{0}_table.txt'.format(order)
+    fname = '../../numlabs/lab10/Tables/l{0}_table.txt'.format(order)
     fp = open(fname, 'r')
 
     for i in range(order+1):
@@ -136,7 +142,7 @@ def make_graph(cmatrix, timesteps, Numpoints, dt):
     ax.set_xlabel('Grid Point')
 
     # We use color to differentiate lines at different times.  Set up the color map
-    cmap = plt.get_cmap('spectral')
+    cmap = plt.get_cmap('copper_r')
     cNorm  = colors.Normalize(vmin=0, vmax=1.*timesteps)
     cNorm_inseconds = colors.Normalize(vmin=0, vmax=1.*timesteps*dt)
     scalarMap = cmx.ScalarMappable(norm=cNorm, cmap=cmap)
@@ -156,21 +162,22 @@ def make_graph(cmatrix, timesteps, Numpoints, dt):
     cb1.set_label('Time (s)')
     return
 
-def advection(timesteps):
+def advection(timesteps, lab_example=True):
     '''Entry point for the Central Scheme'''
-    dx, u, dt, Numpoints, shift, c_0, alpha, epsilon, cmatrix = initialize(timesteps)
+    dx, u, dt, Numpoints, shift, c_0, alpha, epsilon, cmatrix = initialize(timesteps, lab_example)
+
     cmatrix = step_advect(timesteps, cmatrix, Numpoints, u, dt, dx)
     make_graph(cmatrix, timesteps, Numpoints, dt)
 
-def advection2(timesteps):
+def advection2(timesteps, lab_example=True):
     '''Entry point for the Upstream Scheme'''
-    dx, u, dt, Numpoints, shift, c_0, alpha, epsilon, cmatrix = initialize(timesteps)
+    dx, u, dt, Numpoints, shift, c_0, alpha, epsilon, cmatrix = initialize(timesteps, lab_example)
     cmatrix = step_advect2(timesteps, cmatrix, Numpoints, u, dt, dx)
     make_graph(cmatrix, timesteps, Numpoints, dt)
 
-def advection3(timesteps, order):
+def advection3(timesteps, order, lab_example=True):
     ''' Entry point for the Bott Scheme'''
-    dx, u, dt, Numpoints, shift, c_0, alpha, epsilon, cmatrix = initialize(timesteps)
+    dx, u, dt, Numpoints, shift, c_0, alpha, epsilon, cmatrix = initialize(timesteps, lab_example)
     ltable = advect3_gettable(order, Numpoints)
     cmatrix = step_advect3(timesteps, ltable, cmatrix, order, Numpoints, u, dt, dx, epsilon)
     make_graph(cmatrix, timesteps, Numpoints, dt)
