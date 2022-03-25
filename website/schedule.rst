@@ -144,4 +144,5 @@ April
 
 * Apr 8, 6 pm, **G** **U**  Second iPeer evaluation
 
-* Apr 8, 6 pm: **G** **U** Project (LNPD)
+* Apr 8, 6 pm: **G** **U** Project LNPD
+
