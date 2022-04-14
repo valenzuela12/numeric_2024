@@ -1,5 +1,7 @@
-Instructions for uploading of labs - upload pdf file separately. Can include ipynb and code in zip file, or individual files, but pdf MUST be separate. 
-(lose 0.5 marks if a pdf file isn't uploaded separately!). Show example on canvas to show what it looks like for us, and why we are requesting this. 
+Instructions for uploading of labs - upload pdf file separately. Can include ipynb and code in zip file, or individual files, but pdf MUST be separate.
+(lose 0.5 marks if a pdf file isn't uploaded separately!). Show example on canvas to show what it looks like for us, and why we are requesting this.
+Hand in JUST the questions from the assignment, not the entire lab. Preference to also include any .py or .yaml files that are required for your 
+.ipynb to run - this way we can provide feedback on code and/or help debug code that is incorrect.
 
 Worksheet 2 - needs more scaffolding, what are we trying to solve and why. (try to scaffold enough that we don't need to go through it afterwards). 
 
