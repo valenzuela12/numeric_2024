@@ -1,0 +1,22 @@
+Instructions for uploading of labs - upload pdf file separately. Can include ipynb and code in zip file, or individual files, but pdf MUST be separate.
+(lose 0.5 marks if a pdf file isn't uploaded separately!). Show example on canvas to show what it looks like for us, and why we are requesting this.
+Hand in JUST the questions from the assignment, not the entire lab. Preference to also include any .py or .yaml files that are required for your 
+.ipynb to run - this way we can provide feedback on code and/or help debug code that is incorrect.
+
+Update Assignment 6 for undergrads on Canvas
+
+Worksheet 2 - needs more scaffolding, what are we trying to solve and why. (try to scaffold enough that we don't need to go through it afterwards). 
+
+Lab 5 - some questions don't seem to make much sense with the default values in the .yaml files. Needs some re-thinking. 
+Replace problem estimate in the assignment with a different problem. Give more scaffolding aroudn the predator problem. 
+
+Mini-project 2 (undergrads). Add 'new equations for Daisy World' in list of requirements. Add rubric for this.
+
+Add rubrics for all labs?
+
+Add to Assignment 9 to make equivalent to other 10-mark assignments. Update solutions to Assignment 9 (Anya).
+
+For grads (undergrads?):
+Project proposal -> 5 marks
+Project presentation -> 5 marks
+Project -> 50 marks 

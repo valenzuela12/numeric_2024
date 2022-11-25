@@ -28,7 +28,7 @@ dependencies:
   - matplotlib
 
   # To build the website
-  - jinja2<3.1.0
+  - jinja2
   - nbsphinx
   - sphinx
 
