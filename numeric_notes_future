@@ -1,3 +1,38 @@
+
+
+Meeting Jul 2023:
+New UG grading:
+Labs -> 20%
+Mini-projects -> 30%
+
+Gs
+Labs -> 15%
+New mini-project -> 15% (based on Lab 4?)
+
+
+- One due date for assignments (after the class)
+- Ungraded assignments: first submission gets feedback only, no grade; second submission requires a changes summary at the top describing how they have responded to the feedback. Grade is S or U. Need n-1 S grades to get full marks.
+
+- Projects include self-evaluation and self-grade
+
+Worksheets
+- check where we can add scaffolding
+- emphasize they are opportunities for learning, graded for participation, but might be a bit stressful in the moment for those with less coding experience - try to use these as learning opportunities.
+
+
+Labs and assignments
+- go through all to check learning goals (put into slides for class introduction to lab)
+- check lab hits the learning goals
+- check assignments are testing the learning goals (don't add any problems though!)
+- create lecture summary of labs/assignments showing learning goals and how they should have reached them
+
+
+Classes
+- include ~10 minute summary of worksheets at the end of the class
+- 
+
+
+
 Instructions for uploading of labs - upload pdf file separately. Can include ipynb and code in zip file, or individual files, but pdf MUST be separate.
 (lose 0.5 marks if a pdf file isn't uploaded separately!). Show example on canvas to show what it looks like for us, and why we are requesting this.
 Hand in JUST the questions from the assignment, not the entire lab. Preference to also include any .py or .yaml files that are required for your 
@@ -20,3 +55,6 @@ For grads (undergrads?):
 Project proposal -> 5 marks
 Project presentation -> 5 marks
 Project -> 50 marks 
+
+
+
