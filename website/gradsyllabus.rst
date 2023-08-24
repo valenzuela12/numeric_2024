@@ -19,6 +19,13 @@ Instructors
 | Rachel White, rwhite@eoas.ubc.ca, Rm 4019 ESB
 | Susan Allen, 2-2828, sallen@eoas.ubc.ca, Rm 3017 ESB
 
+
+Meeting Times
+-------------
+
+1400-1600 Mondays, MacLeod 3008
+
+
 Prerequisites
 -------------
 
@@ -47,24 +54,16 @@ and time to read and work on the laboratories.
 You can use a web-browser to examine the course exercises. Point your
 browser to:
 
-https://rhwhite.github.io/numeric/notebook_toc.html
-
-
-Meeting Times
--------------
-
-1400-1600 Mondays, Room 127, Earth and Oceans Sciences (EOS) Main
-
-Important Note: this course will be online for a number of weeks at the beginning of the term, including assessments.  We will start in-person meetings on a date yet to be determined by the University.  At the very earliest, this will be Jan 24th.  This date may be updated as time goes on.  When we resume in-person activities, we will meet in our scheduled classroom space on campus.  For meetings prior to that time, we will meet on Zoom: you can find the zoom link on the home page of our canvas site: https://canvas.ubc.ca/courses/82440/pages/numerical-techniques-2022
-
+https://rhwhite.github.io/numeric_2024/notebook_toc.html
 
 
 Grades
 ------
 
-  -  Laboratory Exercises 30% (individual with collaboration)
+  -  Laboratory Exercises 15% (individual with collaboration, satisfactory/unsatisfactory grading)
   -  Quizzes 5% (individual)
   -  Worksheets 5% (group)
+  -  Mini-project 15% (individual with collaboration)
   -  Project Proposal 10% (group)
   -  Project 40% (group)
   -  Project Oral Presentation 10% (group)
