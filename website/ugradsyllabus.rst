@@ -52,13 +52,13 @@ for each lab.
 You can use a web-browser to examine the course exercises. Point your
 browser to:
 
-https://rhwhite.github.io/numeric_2022/notebook_toc.html
+https://rhwhite.github.io/numeric_2024/notebook_toc.html
 
 Grades
 ------
 
-   -  Laboratory Exercises 30% (individual with collaboration)
-   -  Mini-projects 20% (individual with collaboration)
+   -  Laboratory Exercises 20% (individual with collaboration, satisfactory/unsatisfactory grading)
+   -  Mini-projects 30% (individual with collaboration)
    -  Quizzes 5% (individual)
    -  Worksheets 5% (group)
    -  Project Proposal 5%  (group)
@@ -108,9 +108,8 @@ of days in case. )​
 Meeting Times
 -------------
 
-1400-1600 Mondays, Room 127, Earth and Oceans Sciences (EOS) Main
+1400-1600 Mondays, MacLeod 3008
 
-Important Note: this course will be online for a number of week at the beginning of the term, including assessments.  We will start in-person meetings on a date yet to be determined by the University.  At the very earliest, this will be Jan 24th.  This date may be updated as time goes on.  When we resume in-person activities, we will meet in our scheduled classroom space on campus.  For meetings prior to that time, we will meet on Zoom: you can find the zoom link on the home page of our canvas site: https://canvas.ubc.ca/courses/82440/pages/numerical-techniques-2022
 
 Contents
 --------
@@ -206,7 +205,7 @@ University Statement on Values and Policies
 UBC provides resources to support student learning and to maintain
 healthy lifestyles but recognizes that sometimes crises arise and so
 there are additional resources to access including those for survivors
-of sex- ual violence. UBC values respect for the person and ideas of
+of sexual violence. UBC values respect for the person and ideas of
 all members of the academic community. Harassment and discrimination
 are not tolerated nor is suppression of academic freedom. UBC provides
 appropriate accommodation for students with disabilities and for
@@ -254,16 +253,6 @@ material rather than blindly follow rules, but there are
 rules. Plagiarism (i.e. copying of others work) and cheating (not
 following the rules) can result in penalties ranging from zero on an
 assignment to failing the course.
-
-
-COVID Safety in the Classroom
------------------------------
-
-The first two classes, January 10 and January 17, will be held on
-zoom.  See course canvas site for zoom link.
-
-If we return to the classroom on January 24, we will add a COVID
-safety statement here.
 
 
 **For due dates etc, please see the Detailed Schedule.**
