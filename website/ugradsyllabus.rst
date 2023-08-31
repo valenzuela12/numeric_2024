@@ -17,6 +17,12 @@ The students completing this course will be able to apply standard
 numerical solution techniques to the solution of problems such as waves,
 advection, population growth.
 
+Meeting Times
+-------------
+
+1400-1600 Mondays, MacLeod 3008
+
+
 Instructors
 -----------
 
@@ -104,11 +110,6 @@ give two dates for each assignment. You should aim for the first one
 (this would keep you totally up to date). The later one allows a couple
 of days in case. )​
 
-
-Meeting Times
--------------
-
-1400-1600 Mondays, MacLeod 3008
 
 
 Contents
