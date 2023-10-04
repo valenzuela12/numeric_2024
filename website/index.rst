@@ -8,9 +8,11 @@ Welcome! Start by reading the appropriate syllabus below. The "Getting Started" 
 
    Undergrad Syllabus <ugradsyllabus>
 
+   Undergrad Detailed Schedule <ugrad_schedule>
+
    Grad Syllabus <gradsyllabus>
 
-   Detailed Schedule <schedule>
+   Grad Detailed Schedule <grad_schedule>
 
    Optional texts <texts>
 
