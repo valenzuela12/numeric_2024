@@ -1,8 +1,5 @@
-Dates
-=======
-
-Undergraduate Class (ATSC 409)
-==========================
+Dates for Undergraduate Class (ATSC 409)
+====================================
 
 January
 -------

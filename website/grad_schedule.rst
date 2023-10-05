@@ -1,8 +1,5 @@
-Dates
-=======
-
-Graduate Class (EOSC 511)
-==========================
+Dates for Graduate Class (EOSC 511)
+=====================================
 
 January
 -------
