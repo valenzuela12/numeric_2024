@@ -96,11 +96,8 @@ problem, please ask. Help with the labs is
 available 1) through piazza (see CANVAS) so you can contact your classmates
 and ask them 2) during the weekly scheduled lab or 3) directly from the
 instructors. Assignments, quizzes, mini-projects and the project are expected on
-time. Late ones will be marked and then the mark will be multiplied by
-:math:`(0.9)^{\rm (number\ of\ days\ or\ part\ days\ late)}`. (Below we
-give two dates for each assignment. You should aim for the first one
-(this would keep you totally up to date). The later one allows a couple
-of days in case. )
+time. Late mini-projects and projects will be marked and then the mark will be multiplied by
+:math:`(0.9)^{\rm (number\ of\ days\ or\ part\ days\ late)}`.
 
 Set Laboratories
 ----------------
@@ -157,8 +154,8 @@ Smattering of ODE's and PDE's
 Project
 -------
 
--  Done in groups of three. Chosen in consultation with your research supervisors and the
-   instructors. Should be choosen before the elective labs.
+-  Done in groups of three or four. Chosen in consultation with your research supervisors and the
+   instructors. Should be chosen before the elective labs.
 
 -  Time scale three and half weeks.
 
@@ -182,7 +179,7 @@ available here
 https://senate.ubc.ca/policies-resources-support-student-success.
 
 
-Supporting Diversity and Inclusions
+Supporting Diversity and Inclusion
 -----------------------------------
 
 Atmospheric Science, Oceanography and the Earth Sciences havebeen
@@ -218,15 +215,24 @@ rules. Plagiarism (i.e. copying of others work) and cheating (not
 following the rules) can result in penalties ranging from zero on an
 assignment to failing the course.
 
-
-COVID Safety in the Classroom
------------------------------
-
-The first two classes, January 10 and January 17, will be held on
-zoom. See course canvas site for zoom link. 
-
-If we return to the classroom on January 24, we will add a COVID
-safety statement here.
-
-
 **For due dates etc, please see the Detailed Schedule.**
+
+Not feeling well before class?
+-------------------------------
+What to do if you’re sick: If you’re sick, it’s important that you stay home, no matter what you think
+you may be sick with (e.g., cold, flu, other). If you do miss class because of illness:
+• Make a connection early in the term to another student or a group of students in the class. You can
+help each other by sharing notes. If you don’t yet know anyone in the class, post on Piazza to connect
+with other students.
+• Consult the class resources on this website and on canvas. We will post the materials for each class day.
+• In this class, the marking scheme is intended to provide flexibility so that you can prioritize your health
+and are still be able to succeed. As such, there is a “grace space” policy allowing you to miss one in-class worksheet and one
+pre-class quiz with no penalty. 
+• If you are concerned that you will miss a particular key activity due to illness, contact us to discuss.
+
+If an instructor is sick: we will do our best to stay well, but if either of us is ill, here is what you can
+expect:
+• The other instructor will substitute
+• Your TA may help run a class
+• We may have a synchronous online session or two. If this happens, you will receive an email.
+
