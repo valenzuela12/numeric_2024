@@ -43,7 +43,7 @@ laboratory (like a set of lab notes) and you will answer problems most
 of which use the computer. The course consists of three parts. A set of
 required interactive, computer based laboratory exercises, a choice of
 elective laboratory exercises and a project. The project will be a
-group project determined through consultation between the instructors, the student and their
+group project determined through consultation between the instructors, the students and their
 supervisors.
 
 During the meeting times, there will be group worksheets to delve
@@ -87,7 +87,7 @@ to illness, “away games” for athletes etc. In-class paper worksheets
 are done as a group and are to handed in (one worksheet only per
 group) at the end of the worksheet time.
 
-**The project will be done in groups of three to four. It is to be chosen in consultation with your research supervisors and the instructors.**
+**The project will be done in groups of three to four. It is to be chosen in consultation with your research supervisors and the instructors. The subject of these projects has to be ocean or atmosphere related unless the group has identified an outside supervisor who is willing to provide subject specific advice.  Students without ocean/atmosphere expertise can join a ocean/atmopsheric sciences group - it will be up to the group to figure out where and how they can best contribute to the project.**
 
 
 The laboratory problem sets are to be uploaded to the course CANVAS page. Sometimes, rather than a large series of plots, you may wish to
