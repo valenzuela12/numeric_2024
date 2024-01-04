@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\renewcommand{\theenumi}{\alph{enumi}}
+
+\begin{document}
+\section*{EOSC 511/ATSC 409 Assignment for Laboratory One}
+
+{\it Working together is permitted but each student must hand in their own solution in their own words and notation.  All questions should be done by hand (not by computer) and show your steps. Please put your answers on this question form, photograph or scan and convert to pdf before uploading.  If you need help, reach out!}
+
+\begin{center}
+\hrule
+\end{center}
+
+
+Consider the equation $$\frac {\partial y}{\partial t} = - \alpha y,\ {\rm with}\ y=1\ {\rm at}\ t=0$$
+\begin{enumerate}
+\item    What is the analytic solution?
+\vspace{1in}
+\item    Write down the forward Euler, centre difference and backward Euler schemes for this equation.
+\vspace{2.5in}
+\item Use the forward Euler formula to calculate $y(\Delta t)$ in terms of $\alpha$ and $\Delta t$, no
+$y$'s, by making sure to substitute the initial conditions.
+\vspace{1in}
+\clearpage
+\item Again using the forward Euler formula, calculate $y(2\Delta t)$ and $y(3\Delta t)$
+. BONUS: can you write down a formula for $y(n\Delta t)$?
+\vspace{2in}
+\item Repeat c. \& d. for the backward Euler scheme.
+\vspace{3in}
+\item Compare (take the ratio) of the estimate of $y(3\Delta t)$
+--- or BONUS $y(n\Delta t)$
+--- between the backward and forward Euler schemes.  Hint: remember $(1 + c)(1 - c) = (1- c^2)$
+\vspace{2in}
+\clearpage
+\item If $0 < \alpha^2 \Delta t^2 < 1$ which gives the largest answer?
+\vspace{2in}
+\item Use the two plots below show the analytic answers, to draw the derivative (tangent line) the forward Euler method uses for $y(\Delta t)$
+and the derivative (tangent line) the backward Euler method uses for $y(\Delta t)$.\\
+\includegraphics[width=\textwidth]{Lab1_graphs.pdf}
+\item Verify: Does the answer to part h. agree with the answers from parts f \& g? Explain.
+\end{enumerate}
+\end{document}
