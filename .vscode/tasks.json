@@ -6,7 +6,7 @@
         {
             "label": "sphinx clean build",
             "type": "shell",
-            "command": "source activate numeric-refactor && make clean html",
+            "command": "source activate numeric_2024 && make clean html",
             "options": {
                 "cwd": "website"
             },

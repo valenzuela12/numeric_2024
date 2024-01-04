@@ -1,11 +1,14 @@
 {
-    "restructuredtext.confPath": "${workspaceFolder}/website",
-    "python.defaultInterpreterPath": "~/conda_envs/numeric-refactor/bin/python3.10",
+    "python.defaultInterpreterPath": "~/conda_envs/numeric_2024/bin/python",
     "cSpell.words": [
         "discretization",
         "gradsyllabus",
+        "ipython",
+        "nbsphinx",
         "neighbouring",
+        "pandoc",
         "ugradsyllabus",
         "wavenumber"
-    ]
+    ],
+    "esbonio.sphinx.confDir": "${workspaceFolder}/website"
 }
