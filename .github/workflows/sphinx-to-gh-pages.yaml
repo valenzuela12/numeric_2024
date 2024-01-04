@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up conda environment
-        uses: conda-incubator/setup-miniconda@v2
+        uses: conda-incubator/setup-miniconda@v3
         with:
            miniforge-variant: Mambaforge-pypy3
            miniforge-version: latest
