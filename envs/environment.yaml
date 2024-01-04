@@ -1,14 +1,14 @@
 # conda environment description file for repo refactoring experiments for
-# 2022 edition of EOAS 511/ATSC 409 Numeric course
+# 2024 edition of EOAS 511/ATSC 409 Numeric course
 #
 # Create a conda environment for working on course notebooks and documentation,
 # and refactoring experiments with:
 #
-#   $ cd numeric_2022
+#   $ cd numeric_2024
 #   $ conda env create -f envs/environment.yaml
-#   $ conda activate numeric_2022
+#   $ conda activate numeric_2024
 
-name: numeric_2022
+name: numeric_2024
 
 channels:
   - conda-forge
@@ -16,7 +16,7 @@ channels:
 
 dependencies:
   # The basics
-  - python=3.10
+  - python=3.12
   - pip
 
   # To run Jupyter notebooks

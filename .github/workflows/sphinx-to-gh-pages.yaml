@@ -18,22 +18,18 @@ jobs:
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up conda environment
-        uses: conda-incubator/setup-miniconda@v2
+      - name: Set up Conda environment with Micromamba
+        uses: mamba-org/setup-micromamba@e820223f89c8720d6c740ca154a7adf32fcd278a
         with:
-           miniforge-variant: Mambaforge-pypy3
-           miniforge-version: latest
-           use-mamba: true
-           auto-update-conda: false
-           auto-activate-base: false
-           channels: conda-forge,nodefaults
-           channel-priority: true
            environment-file: envs/environment-gh-pages.yaml
-           activate-environment: numeric-gh-pages
+           environment-name: numeric-gh-pages
+           # persist downloads and environment caches for 1 day
+           cache-downloads-key: downloads-${{ steps.date.outputs.date }}
+           cache-environment-key: environment-${{ steps.date.outputs.date }}
 
       - name: Sphinx build and deploy
         uses: uibcdf/action-sphinx-docs-to-gh-pages@v1.0-beta.2

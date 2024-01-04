@@ -1,11 +1,6 @@
 Graduate Numerical Techniques for Atmosphere, Ocean and Earth Scientists: EOSC 511 / ATSC 506
 =============================================================================================
 
-PDF copy
---------
-
-`Grad and Ugrad syllabi and schedule <pdf_files/numeric.pdf>`_
-
 Course Purpose
 --------------
 
