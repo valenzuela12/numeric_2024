@@ -1,3 +1,92 @@
+
+
+Day 1:
+Class goals:
+        - students understand the structure of the course
+        - introduce students to teaching team
+        - students start getting to know each other
+                - each student introduces themselves
+                        - preferred name and pronouns
+                        - grad/undergrad, major
+                        - why they're taking the course
+                        - where they put themselves on a
+
+All slides/links on canvas website/github website.
+
+Rachel: introduction to course - structure, grading, us, students introduce themselves. 
+	- Office hours checks, who can't make Wed (R time), who can't make T (SA time), who can't make both.
+
+Susan: introduction to notebooks, how to read lab 1, set up environment
+
+
+TODOS:
+
+1. Both: Prep Day 1. 
+
+2. Susan: to redo grad syllabus optional labs - combination that adds up to 10 (previously 20).
+Lab 9 stays as a 5-point lab.
+
+
+3. Rachel: Re-write ungrading of assignments in both syllabus. 
+	- add final grade
+	- graded within a week
+	- resubmission 2 weeks after initial submission date
+
+	- Explicitly link syllabuses to canvas, publish canvas page. Hide "syllabus"
+
+4. Understand how to reassign assignments with dates - Cameryon to submit lab 1 as test student
+
+
+
+- Find materials - day 1 recording etc?
+
+
+- Prep Day 2: RHW: numpy and jupyter, SA: group work
+
+Meeting Jan 4th.
+Decisions made: 
+
+1. Use un-run jupyter notebooks for website, only after Doug has confirmed they will work. 
+
+2. Assignment canvas grading:
+Unsatisfactory = 0
+Satisfactory = 8
+Excellent = 10
+
+Flexibility on resubmission timelines for accommodation
+
+Final grade:
+Undergraduates:
+4 or more submissions at 'Excellent', none 'Unsatisfactory': 100%
+2 or more submissions at 'Excellent', none 'Unsatisfactory': 90%
+1 or fewer 'Excellent', none 'Unsatisfactory': 80%
+1 'Unsatisfactory' submission: 70%
+2 'Unsatisfactory' submissions: 60%
+3 'Unsatisfactory' submissions: 50%
+4 or more 'Unsatisfactory' submissions: 0%:
+
+Graduates
+5 or more submissions at 'Excellent', none 'Unsatisfactory': 100%
+3 or more submissions at 'Excellent', none 'Unsatisfactory': 90%
+1 or fewer 'Excellent', none 'Unsatisfactory': 80%
+1 'Unsatisfactory' submission: 70%
+2 'Unsatisfactory' submissions: 60%
+3 'Unsatisfactory' submissions: 50%
+4 or more 'Unsatisfactory' submissions: 0%:
+
+
+
+Meeting Oct 5th 2023:
+
+- two project presentation dates (one on Apr. 15th, day before exams start - students can choose which to present at)
+
+- Change iPeer first evaluation for grads and undergrads
+
+- Add student hours to website: RHW Wed (time tbd); SA Thurs (time tbd)
+
+
+
+
 Meeting Aug 2023:
 
 Add 'student hours' on Wed/Thurs, one hour each with Susan, Rachel, TA. 
