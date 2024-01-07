@@ -63,7 +63,7 @@ https://rhwhite.github.io/numeric_2024/notebook_toc.html
 Grades
 ------
 
-   -  Laboratory Exercises 20% (individual with collaboration, satisfactory/unsatisfactory grading)
+   -  Laboratory Exercises 20% (individual with collaboration, excellent/satisfactory/unsatisfactory grading)
    -  Mini-projects 30% (individual with collaboration)
    -  Quizzes 5% (individual)
    -  Worksheets 5% (group)
@@ -71,11 +71,44 @@ Grades
    -  Project 30% (group)
    -  Project Oral Presentation 5% (group)
 
-For each computer laboratory there will be an assigned exercise set.
+There will be 6 assigned exercise sets or 'Laboratory Exercises' based on the labs.
 Note that these are not necessarily the same as the problems in the
 lab and will generally be a much smaller set.  Laboratory exercises
 can be worked with partners or alone. Each student must upload their
 own solution in their own words.
+
+The laboratory exercise sets are to be uploaded to the course CANVAS page. 
+Sometimes, rather than a large series of plots, you may wish to
+include a summarizing table. If you do not understand the scope of a
+problem, please ask. Help with the labs is
+available 1) through piazza (see CANVAS) so you can contact your classmates
+and ask them 2) during the weekly scheduled lab or 3) directly from the
+instructors during the scheduled office hours (see canvas). 
+
+Laboratory exercises will be graded as 'excellent', 'satisfactory' or 'unsatisfactory'.
+Your grade on canvas will be given as:
+1.0 = excellent
+0.8 = satisfactory
+0 = unsatisfactory
+Grades will be returned within a week of the submission deadline.
+If you receive a grade of 'satisfactory' or 'unsatisfactory' on your first submission,
+you will be given an opportunity to resubmit the problems you got incorrect to try to
+improve your grade. To get a score of 'excellent' on a resubmission, you must include 
+a full explanation of your understanding of why your initial answer was incorrect, and 
+what misconception, or mmistake, you have corrected to get to your new answer. Resubmissions
+will be due exactly 2 weeks after the original submission deadline. It is your responsibility
+to manage the timing of the resubmission deadlines with the next laboratory exercise.
+
+Your final Laboratory Exercise grade will be calculated from the number of excellent, satisfactory
+and unsatisfactory grades you have from the 6 exercises:
+4 or more submissions at 'Excellent', none 'Unsatisfactory': 100%
+2 or more submissions at 'Excellent', none 'Unsatisfactory': 90%
+1 or fewer 'Excellent', none 'Unsatisfactory': 80%
+1 'Unsatisfactory' submission: 70%
+2 'Unsatisfactory' submissions: 60%
+3 'Unsatisfactory' submissions: 50%
+4 or more 'Unsatisfactory' submissions: 0%:
+
 
 The two mini-projects are longer assignments and slightly open-ended.
 These mini-projects can be worked with partners or alone.  Each
@@ -98,18 +131,9 @@ group) at the end of the worksheet time.
 be selected from a list provided by the instructors or in consultation
 with the instructors.**
 
-The laboratory exercisse sets are to be uploaded to the course CANVAS page. Sometimes, rather than a large series of plots, you may wish to
-include a summarizing table. If you do not understand the scope of a
-problem, please ask. Help with the labs is
-available 1) through piazza (see CANVAS) so you can contact your classmates
-and ask them 2) during the weekly scheduled lab or 3) directly from the
-instructors. Assignments, quizzes, mini-projects and the project are expected on
+Assignments, quizzes, mini-projects and the project are expected on
 time. Late ones will be marked and then the mark will be multiplied by
-:math:`(0.9)^{\rm (number\ of\ days\ or\ part\ days\ late)}`. (Below we
-give two dates for each assignment. You should aim for the first one
-(this would keep you totally up to date). The later one allows a couple
-of days in case. )​
-
+:math:`(0.9)^{\rm (number\ of\ days\ or\ part\ days\ late)}`. 
 
 
 Contents
