@@ -63,11 +63,48 @@ Grades
   -  Project 40% (group)
   -  Project Oral Presentation 10% (group)
 
-For each computer laboratory there will be an assigned exercise set.
+
+There will be 7 assigned exercise sets or 'Laboratory Exercises' based on the labs.
 Note that these are not necessarily the same as the problems in the
 lab and will generally be a much smaller set.  Laboratory exercises
 can be worked with partners or alone. Each student must upload their
 own solution in their own words.
+
+The laboratory exercise sets are to be uploaded to the course CANVAS page.
+Sometimes, rather than a large series of plots, you may wish to
+include a summarizing table. If you do not understand the scope of a
+problem, please ask. Help with the labs is
+available 1) through piazza (see CANVAS) so you can contact your classmates
+and ask them 2) during the weekly scheduled lab or 3) directly from the
+instructors during the scheduled office hours (see canvas).
+
+Laboratory exercises will be graded as 'excellent', 'satisfactory' or 'unsatisfactory'.
+Your grade on canvas will be given as:
+
+1.0 = excellent
+
+0.8 = satisfactory
+
+0 = unsatisfactory
+
+Grades will be returned within a week of the submission deadline.
+If you receive a grade of 'satisfactory' or 'unsatisfactory' on your first submission,
+you will be given an opportunity to resubmit the problems you got incorrect to try to
+improve your grade. To get a score of 'excellent' on a resubmission, you must include
+a full explanation of your understanding of why your initial answer was incorrect, and
+what misconception, or mistake, you have corrected to get to your new answer. Resubmissions
+will be due exactly 2 weeks after the original submission deadline. It is your responsibility
+to manage the timing of the resubmission deadlines with the next laboratory exercise.
+
+Your final Laboratory Exercise grade will be calculated from the number of excellent, satisfactory
+and unsatisfactory grades you have from the 7 exercises:
+5 or more submissions at 'Excellent', none 'Unsatisfactory': 100%
+3 or more submissions at 'Excellent', none 'Unsatisfactory': 90%
+1 or fewer 'Excellent', none 'Unsatisfactory': 80%
+1 'Unsatisfactory' submission: 70%
+2 'Unsatisfactory' submissions: 60%
+3 'Unsatisfactory' submissions: 50%
+4 or more 'Unsatisfactory' submissions: 0%:
 
 Quizzes are done online, reflect the learning objectives of each lab
 and are assigned to ensure you do the reading with enough depth to
@@ -82,15 +119,10 @@ to illness, “away games” for athletes etc. In-class paper worksheets
 are done as a group and are to handed in (one worksheet only per
 group) at the end of the worksheet time.
 
-**The project will be done in groups of three to four. It is to be chosen in consultation with your research supervisors and the instructors. The subject of these projects has to be ocean or atmosphere related unless the group has identified an outside supervisor who is willing to provide subject specific advice.  Students without ocean/atmosphere expertise can join a ocean/atmopsheric sciences group - it will be up to the group to figure out where and how they can best contribute to the project.**
+**The project will be done in groups of three to four. The project topic is to be chosen in consultation with your research supervisors and the instructors. The subject of these projects has to be ocean or atmosphere related unless the group has identified an outside supervisor who is willing to provide subject specific advice.  Students without ocean/atmosphere expertise can join a ocean/atmopsheric sciences group - it will be up to the group to figure out where and how they can best contribute to the project.**
 
 
-The laboratory problem sets are to be uploaded to the course CANVAS page. Sometimes, rather than a large series of plots, you may wish to
-include a summarizing table. If you do not understand the scope of a
-problem, please ask. Help with the labs is
-available 1) through piazza (see CANVAS) so you can contact your classmates
-and ask them 2) during the weekly scheduled lab or 3) directly from the
-instructors. Assignments, quizzes, mini-projects and the project are expected on
+Assignments, quizzes, mini-projects and the project are expected on
 time. Late mini-projects and projects will be marked and then the mark will be multiplied by
 :math:`(0.9)^{\rm (number\ of\ days\ or\ part\ days\ late)}`.
 
@@ -115,7 +147,7 @@ webpage.
 Elective Laboratories
 ---------------------
 
-Choose the one large lab (10 points) or two small labs (5 points). Time scale one and a half weeks.
+Choose the one large lab (10 points) or two small labs (5 points). Time scale: one and a half weeks.
 
 ODE’s
 ~~~~~
@@ -170,7 +202,7 @@ https://senate.ubc.ca/policies-resources-support-student-success.
 Supporting Diversity and Inclusion
 -----------------------------------
 
-Atmospheric Science, Oceanography and the Earth Sciences havebeen
+Atmospheric Science, Oceanography and the Earth Sciences have been
 historically dominated by a small subset of
 privileged people who are predominantly male and white, missing out on
 many influential individuals thoughts and

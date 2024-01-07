@@ -99,7 +99,7 @@ If you receive a grade of 'satisfactory' or 'unsatisfactory' on your first submi
 you will be given an opportunity to resubmit the problems you got incorrect to try to
 improve your grade. To get a score of 'excellent' on a resubmission, you must include 
 a full explanation of your understanding of why your initial answer was incorrect, and 
-what misconception, or mmistake, you have corrected to get to your new answer. Resubmissions
+what misconception, or mistake, you have corrected to get to your new answer. Resubmissions
 will be due exactly 2 weeks after the original submission deadline. It is your responsibility
 to manage the timing of the resubmission deadlines with the next laboratory exercise.
 
@@ -250,7 +250,7 @@ https://senate.ubc.ca/policies-resources-support-student-success.
 Supporting Diversity and Inclusions
 -----------------------------------
 
-Atmospheric Science, Oceanography and the Earth Sciences havebeen
+Atmospheric Science, Oceanography and the Earth Sciences have been
 historically dominated by a small subset of
 privileged people who are predominantly male and white, missing out on
 many influential individuals thoughts and
