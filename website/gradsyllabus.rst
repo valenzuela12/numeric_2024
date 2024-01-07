@@ -115,36 +115,29 @@ webpage.
 Elective Laboratories
 ---------------------
 
-Choose one of the following concentration. Time scale two and a half weeks.
+Choose the one large lab (10 points) or two small labs (5 points). Time scale one and a half weeks.
 
-ODE’s and FFT’s
-~~~~~~~~~~~~~~~
+ODE’s
+~~~~~
 
--  Rest of Lab 5
+-  Rest of Lab 5 (5 points)
 
--  Lab 6
-
--  Lab 9 (FFT’s)
+-  Lab 6 (5 points)
 
 PDE’s
 ~~~~~
 
--  End of Lab 7
+-  End of Lab 7 (5 points)
 
--  Lab 8
+-  Lab 8 (10 points)
 
--  Lab 10
+-  Lab 10 (5 points)
 
-Smattering of ODE's and PDE's
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FFT's
+~~~~~
+   
+-  Lab 9 (5 points)
 
-- Rest of Lab 5
-
--  Lab 6
-
-- Rest of Lab 7
-
--  Lab 10
 
 Project
 -------
