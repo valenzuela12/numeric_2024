@@ -87,9 +87,13 @@ instructors during the scheduled office hours (see canvas).
 
 Laboratory exercises will be graded as 'excellent', 'satisfactory' or 'unsatisfactory'.
 Your grade on canvas will be given as:
+
 1.0 = excellent
+
 0.8 = satisfactory
+
 0 = unsatisfactory
+
 Grades will be returned within a week of the submission deadline.
 If you receive a grade of 'satisfactory' or 'unsatisfactory' on your first submission,
 you will be given an opportunity to resubmit the problems you got incorrect to try to
