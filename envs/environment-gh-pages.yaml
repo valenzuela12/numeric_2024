@@ -16,6 +16,7 @@ dependencies:
   # To build the website
   - ipython
   - jinja2
+  - jupyterlab
   - nbsphinx
   - sphinx
 
