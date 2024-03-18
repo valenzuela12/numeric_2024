@@ -125,7 +125,7 @@ def first_time_step(u, v, h, g, H, dt, dx, ho, gu, gh, n_grid):
     factor = gu * ho / 2
     midpoint = n_grid // 2
     v.now[midpoint - 1] = -ho/2
-    v.now[midpoint + 1] = ho/2    
+    v.now[midpoint + 1] = ho/2 
     u.now[midpoint - 1] = -factor
     u.now[midpoint + 1] = factor
     h.now[1:n_grid - 1] = 0
