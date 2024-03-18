@@ -138,9 +138,9 @@ def leap_frog(u, v, h, gu, gh, n_grid, f):
     """
     # HERE I added the modified equations specified in the jupyter script
     for pt in np.arange(1, n_grid - 1):
-        u.next[pt] = u.prev[pt] - gu * (h.now[pt + 1] - h.now[pt - 1]) + 2 * f * v.now[pt]
+        u.next[pt] = u.prev[pt] + f * v.now[pt] - 2 * gu * (h.now[pt + 1] - h.now[pt]) 
         v.next[pt] = v.prev[pt] - f * u.now[pt]
-        h.next[pt] = h.prev[pt] - gh * (u.now[pt + 1] - u.now[pt - 1])
+        h.next[pt] = h.prev[pt] - 2 * gh * (u.now[pt] - u.now[pt - 1])
 
  # AFTER THESE STEPS I JUST ADD OTHER VARIABLES FOR THE v COMPONENT TO BE PLOTTED AND STORED, SAME AS FOR u AND h
 def make_graph(u, v, h, dt, n_time):
