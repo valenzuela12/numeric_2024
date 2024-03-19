@@ -124,8 +124,8 @@ def first_time_step(u, v, h, g, H, dt, dx, ho, gu, gh, n_grid):
     v.now[1:n_grid - 1] = 0
     factor = gu * ho / 2
     midpoint = n_grid // 2
-    v.now[midpoint - 1] = -ho/2
-    v.now[midpoint + 1] = ho/2 
+    v.now[midpoint - 1] = -factor
+    v.now[midpoint + 1] = factor 
     u.now[midpoint - 1] = -factor
     u.now[midpoint + 1] = factor
     h.now[1:n_grid - 1] = 0
@@ -138,8 +138,8 @@ def leap_frog(u, v, h, gu, gh, n_grid, f):
     """
     # HERE I added the modified equations specified in the jupyter script
     for pt in np.arange(1, n_grid - 1):
-        u.next[pt] = u.prev[pt] + f * v.now[pt] - 2 * gu * (h.now[pt + 1] - h.now[pt]) 
-        v.next[pt] = v.prev[pt] - f * u.now[pt]
+        u.next[pt] = u.prev[pt] + 2 * f * v.now[pt] - 2 * gu * (h.now[pt + 1] - h.now[pt]) 
+        v.next[pt] = v.prev[pt] - 2 * f * u.now[pt]
         h.next[pt] = h.prev[pt] - 2 * gh * (u.now[pt] - u.now[pt - 1])
 
  # AFTER THESE STEPS I JUST ADD OTHER VARIABLES FOR THE v COMPONENT TO BE PLOTTED AND STORED, SAME AS FOR u AND h
@@ -201,7 +201,7 @@ def rain(args):
     dt = 0.001                  # time step [s]
     dx = 1                      # grid spacing [cm]
     ho = 0.01                   # initial perturbation of surface [cm]
-    f=10**(-4)                  # coriolis parameter -------------------------> ADDED 
+    f=10**(-4) * dt                  # coriolis parameter -------------------------> ADDED 
     gu = g * dt / dx            # first handy constant
     gh = H * dt / dx            # second handy constant
     # Create velocity and surface height objects
