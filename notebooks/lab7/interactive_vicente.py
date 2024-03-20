@@ -92,21 +92,34 @@ def find_depth2(H0, ngrid):
 def find_depth3(H0, ngrid):
     #Hu = H0*np.ones((ngrid, ngrid))
     #Hv = H0*np.ones_like(Hu)
-    X = np.arange(0, ngrid)
-    Y = np.arange(0, ngrid)
+    #X = np.arange(0, ngrid)
+    #Y = np.arange(0, ngrid)
+    #X, Y = np.meshgrid(X, Y)
+    #R = np.sqrt((X-ngrid)**2 + (Y-ngrid)**2)
+    #std_dev = 10.0  # Value to smooth the bottom
+    X = np.arange(0, ngrid)*0.4
+    Y = np.sin(X)
     X, Y = np.meshgrid(X, Y)
-    R = np.sqrt((X-ngrid/3)**2 + (Y-ngrid/3)**2)
-    std_dev = 10.0  # Value to smooth the bottom
-    Hu = H0 / 1.5 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
-    Hv = H0 / 1.5 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
-    print ('Interesting Bottom: A gaussian bottom!. Smooth parameter = ' + str(std_dev))
+    Hu = H0/1.2 + Y + np.sin(X)
+    Hv = H0/1.2 + Y + np.sin(X)
+
+    #Hu = H0/1.2 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
+    #Hv = H0/1.2 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
+    #print ('Interesting Bottom: A gaussian bottom!. Smooth parameter = ' + str(std_dev))
     #
-    fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(10,10))
+    fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(7,7))
     surf = ax.plot_surface(X, Y, Hu, cmap='jet',linewidth=0, antialiased=False)
-    ax.set_title('Gaussian Bottom used for calculations. Maximum Bottom Height = ' +str(np.max(np.round(Hu,2))) + ' m')
+    ax.set_title('Sinusoidal Bottom in X used for calculations. Maximum Bottom Height = ' +str(np.max(np.round(Hu,2))) + ' m')
     ax.set_xlabel('ngrid (X)')
     ax.set_ylabel('ngrid (Y)')
     ax.set_zlabel('Bottom Height from H0 =' +str(H0))
+    #
+    fig, ax1 = plt.subplots(figsize=(5,5))
+
+    ax1.contour(X, Y, Hu,linewidth=0, antialiased=False)
+    ax1.set_title('Sinusoidal Bottom in X used for calculations. Maximum Bottom Height = ' +str(np.max(np.round(Hu,2))) + ' m')
+    ax1.set_xlabel('ngrid (X)')
+    ax1.set_ylabel('ngrid (Y)')
     return Hu, Hv
 
 def initial(ngrid):
