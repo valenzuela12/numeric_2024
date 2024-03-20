@@ -18,7 +18,6 @@ def interactive1(grid, ngrid, dt, T, small=False):  # return eta
     f = 1e-4
     g = 10
     H0 = 1000
-
 # set up spatial scale L is total domain size
     L = 1000e3
 
@@ -61,7 +60,7 @@ def interactive1(grid, ngrid, dt, T, small=False):  # return eta
         u, v, eta, up, vp, etap = exchange(u, v, eta, up, vp, etap)
 
     # plot contours
-    plotit(grid, ngrid, dx, x, y, u, v, eta)
+    plotit(grid, ngrid, dx, x, y, u, v, eta, H0)
 
     return
 
@@ -79,21 +78,35 @@ def findforcing(L, dx, ngrid):
     return x, y, spatial
 
 def find_depth1(H0, ngrid):
-    print ('Flat Bottom')
+    print ('Flat Bottom (Find Depth 1)')
     Hu = H0*np.ones((ngrid, ngrid))
     Hv = H0*np.ones_like(Hu)
     return Hu, Hv
 
 def find_depth2(H0, ngrid):
-    print ('Flat Bottom')
+    print ('Flat Bottom (Find Depth 2)')
     Hu = H0*np.ones((ngrid, ngrid))
     Hv = H0*np.ones_like(Hu)
     return Hu, Hv
 
 def find_depth3(H0, ngrid):
-    print ('Flat Bottom')
-    Hu = H0*np.ones((ngrid, ngrid))
-    Hv = H0*np.ones_like(Hu)
+    #Hu = H0*np.ones((ngrid, ngrid))
+    #Hv = H0*np.ones_like(Hu)
+    X = np.arange(0, ngrid)
+    Y = np.arange(0, ngrid)
+    X, Y = np.meshgrid(X, Y)
+    R = np.sqrt((X-ngrid/3)**2 + (Y-ngrid/3)**2)
+    std_dev = 10.0  # Value to smooth the bottom
+    Hu = H0 / 1.5 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
+    Hv = H0 / 1.5 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
+    print ('Interesting Bottom: A gaussian bottom!. Smooth parameter = ' + str(std_dev))
+    #
+    fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(10,10))
+    surf = ax.plot_surface(X, Y, Hu, cmap='jet',linewidth=0, antialiased=False)
+    ax.set_title('Gaussian Bottom used for calculations. Maximum Bottom Height = ' +str(np.max(np.round(Hu,2))) + ' m')
+    ax.set_xlabel('ngrid (X)')
+    ax.set_ylabel('ngrid (Y)')
+    ax.set_zlabel('Bottom Height from H0 =' +str(H0))
     return Hu, Hv
 
 def initial(ngrid):
@@ -197,7 +210,7 @@ def exchange(u, v, eta, up, vp, etap):
 
     return u, v, eta, up, vp, etap
 
-def plotit(grid, ngrid, dx, x, y, u, v, eta):
+def plotit(grid, ngrid, dx, x, y, u, v, eta, H0):
     '''Contour plots of u, v, eta'''
 
     shift = {1: (0, 0), 2: (0.5, 0.5), 3: (0.5, 0)}
@@ -210,15 +223,15 @@ def plotit(grid, ngrid, dx, x, y, u, v, eta):
     ax[0,1].set_title('velocity')
     ax[1,0].set_title('u')
     ax[1,1].set_title('v')
-    ax[0,0].contour(x/1000, y/1000, eta.transpose())
-    ax[1,0].contour((x + shift[grid][0] * dx)/1000,
-                  (y + shift[grid][1] * dx)/1000, u.transpose())
-    ax[1,1].contour((x + shift[grid][1] * dx)/1000,
-                  (y + shift[grid][0] * dx)/1000, v.transpose())
+    ax[0,0].contour(x/H0, y/H0, eta.transpose())
+    ax[1,0].contour((x + shift[grid][0] * dx)/H0,
+                  (y + shift[grid][1] * dx)/H0, u.transpose())
+    ax[1,1].contour((x + shift[grid][1] * dx)/H0,
+                  (y + shift[grid][0] * dx)/H0, v.transpose())
 
     if grid == 3:
-        ax[0,1].quiver(x[1:]/1000., y[1:]/1000,
+        ax[0,1].quiver(x[1:]/H0, y[1:]/H0,
                        0.5 * (u[1:,1:] + u[:-1,1:]).transpose(),
                        0.5 * (v[1:,1:] + v[1:,:-1]).transpose())
     else:
-        ax[0,1].quiver(x/1000, y/1000, u.transpose(), v.transpose())
+        ax[0,1].quiver(x/H0, y/H0, u.transpose(), v.transpose())
