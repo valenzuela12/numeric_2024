@@ -5,6 +5,7 @@ even though the Coriolis force is still included, the scale is so small, its eff
 
 import matplotlib.pyplot as plt
 import numpy as np
+import cmocean.cm as cm
 
 def interactive1(grid, ngrid, dt, T, small=False):  # return eta
     '''recommended values ngrid=11, dt=150, T=4*3600 (4 hours), small=False OR
@@ -61,7 +62,7 @@ def interactive1(grid, ngrid, dt, T, small=False):  # return eta
         u, v, eta, up, vp, etap = exchange(u, v, eta, up, vp, etap)
 
     # plot contours
-    plotit(grid, ngrid, dx, x, y, u, v, eta)
+    plotit(grid, ngrid, dx, x, y, u, v, eta, H0)
 
     return
 
@@ -197,28 +198,32 @@ def exchange(u, v, eta, up, vp, etap):
 
     return u, v, eta, up, vp, etap
 
-def plotit(grid, ngrid, dx, x, y, u, v, eta):
+def plotit(grid, ngrid, dx, x, y, u, v, eta, H0):
     '''Contour plots of u, v, eta'''
 
     shift = {1: (0, 0), 2: (0.5, 0.5), 3: (0.5, 0)}
 
-    fig, ax = plt.subplots(2,2, figsize=(10,10))
+    fig, ax = plt.subplots(2,2, figsize=(14,14))
     for i in range(2):
         ax[1,i].set_xlabel('x (km)')
         ax[i,0].set_ylabel('y (km)')
-    ax[0,0].set_title('$\eta$')
-    ax[0,1].set_title('velocity')
-    ax[1,0].set_title('u')
-    ax[1,1].set_title('v')
-    ax[0,0].contour(x/1000, y/1000, eta.transpose())
-    ax[1,0].contour((x + shift[grid][0] * dx)/1000,
-                  (y + shift[grid][1] * dx)/1000, u.transpose())
-    ax[1,1].contour((x + shift[grid][1] * dx)/1000,
-                  (y + shift[grid][0] * dx)/1000, v.transpose())
-
+    ax[0,0].set_title('Surface Height ($\eta$)')
+    ax[0,1].set_title('Velocity')
+    ax[1,0].set_title('U component')
+    ax[1,1].set_title('V component')
+    plot1 = ax[0,0].contourf(x/H0, y/H0, eta.transpose(), cmap=cm.dense)
+    plot2 = ax[1,0].contourf((x + shift[grid][0] * dx)/H0,
+                  (y + shift[grid][1] * dx)/H0, u.transpose(), cmap=cm.balance)
+    plot3 = ax[1,1].contourf((x + shift[grid][1] * dx)/H0,
+                  (y + shift[grid][0] * dx)/H0, v.transpose(), cmap=cm.balance)
+    cb1=plt.colorbar(plot1, ax=ax[0,0])
+    cb1=plt.colorbar(plot2, ax=ax[1,0])
+    cb1=plt.colorbar(plot3, ax=ax[1,1])
     if grid == 3:
-        ax[0,1].quiver(x[1:]/1000., y[1:]/1000,
+        ax[0,1].quiver(x[1:]/H0, y[1:]/H0,
                        0.5 * (u[1:,1:] + u[:-1,1:]).transpose(),
                        0.5 * (v[1:,1:] + v[1:,:-1]).transpose())
     else:
-        ax[0,1].quiver(x/1000, y/1000, u.transpose(), v.transpose())
+        ax[0,1].quiver(x/H0, y/H0, u.transpose(), v.transpose())
+    #
+    plt.suptitle(r'Surface Height ($\eta$) and Velocities (U & V) with  FLAT Bottom')  

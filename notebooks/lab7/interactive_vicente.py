@@ -5,6 +5,7 @@ even though the Coriolis force is still included, the scale is so small, its eff
 
 import matplotlib.pyplot as plt
 import numpy as np
+import cmocean.cm as cm
 
 def interactive1(grid, ngrid, dt, T, small=False):  # return eta
     '''recommended values ngrid=11, dt=150, T=4*3600 (4 hours), small=False OR
@@ -54,7 +55,7 @@ def interactive1(grid, ngrid, dt, T, small=False):  # return eta
         eta = eta + 0.1 * (1 - np.exp(-t*t)) * spatial
 
         # periodic boundary conditions
-        u, v, eta = periodicbc(ngrid, u, v, eta)
+        u, v, eta, Hu, Hv = periodicbc(ngrid, u, v, eta, Hu, Hv)
 
         # exchange values
         u, v, eta, up, vp, etap = exchange(u, v, eta, up, vp, etap)
@@ -90,36 +91,42 @@ def find_depth2(H0, ngrid):
     return Hu, Hv
 
 def find_depth3(H0, ngrid):
-    #Hu = H0*np.ones((ngrid, ngrid))
-    #Hv = H0*np.ones_like(Hu)
-    #X = np.arange(0, ngrid)
-    #Y = np.arange(0, ngrid)
-    #X, Y = np.meshgrid(X, Y)
-    #R = np.sqrt((X-ngrid)**2 + (Y-ngrid)**2)
-    #std_dev = 10.0  # Value to smooth the bottom
-    X = np.arange(0, ngrid)*0.4
-    Y = np.sin(X)
+    X = np.arange(0, ngrid)
+    Y = np.arange(0, ngrid)
     X, Y = np.meshgrid(X, Y)
-    Hu = H0/1.2 + Y + np.sin(X)
-    Hv = H0/1.2 + Y + np.sin(X)
-
-    #Hu = H0/1.2 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
-    #Hv = H0/1.2 + ((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
-    #print ('Interesting Bottom: A gaussian bottom!. Smooth parameter = ' + str(std_dev))
+    R = np.sqrt((X-ngrid/2.1)**2 + (Y-ngrid/2.1)**2)# Centred Gaussian bump
+    std_dev = 15.0  # Value to smooth the bottom
     #
-    fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(7,7))
-    surf = ax.plot_surface(X, Y, Hu, cmap='jet',linewidth=0, antialiased=False)
-    ax.set_title('Sinusoidal Bottom in X used for calculations. Maximum Bottom Height = ' +str(np.max(np.round(Hu,2))) + ' m')
+    H1 = (H0*300)*((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
+    H2 = (H0*300)*((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
+    #
+    mean_bump = np.mean(H1)
+    # Create a condition to make all the boundaries equal (at the same depth)
+    H1[H2 < mean_bump] = mean_bump 
+    H2[H1 < mean_bump] = mean_bump
+    # Set the gaussian bump to start from 0 m
+    Hu=H1-mean_bump
+    Hv=H1-mean_bump
+    #
+    fig = plt.figure(figsize=(14, 7))
+    #
+    ax = plt.subplot2grid((1, 2), (0, 0), projection='3d')
+    surf = ax.plot_surface(X, Y, Hu, cmap=cm.deep_r, linewidth=0, antialiased=False)
     ax.set_xlabel('ngrid (X)')
     ax.set_ylabel('ngrid (Y)')
-    ax.set_zlabel('Bottom Height from H0 =' +str(H0))
+    ax.set_zlabel('Height [m]')
     #
-    fig, ax1 = plt.subplots(figsize=(5,5))
-
-    ax1.contour(X, Y, Hu,linewidth=0, antialiased=False)
-    ax1.set_title('Sinusoidal Bottom in X used for calculations. Maximum Bottom Height = ' +str(np.max(np.round(Hu,2))) + ' m')
+    ax1 = plt.subplot2grid((1, 2), (0, 1))
+    contour = ax1.contourf(X, Y, Hu, cmap=cm.deep_r)
+    cbar = plt.colorbar(contour, ax=ax1)
+    cbar.set_label('Bottom Height [m]')
     ax1.set_xlabel('ngrid (X)')
     ax1.set_ylabel('ngrid (Y)')
+    #
+    plt.suptitle('Gaussian Seamount with a maximum bottom height of ' + str(np.max(np.round(Hu, 2))) + ' m', fontsize=20)
+    plt.tight_layout()
+    #
+    plt.show()
     return Hu, Hv
 
 def initial(ngrid):
@@ -189,7 +196,7 @@ def stepgrid3(ngrid, f, g, Hu, Hv, dt, rdx, u, v, eta, up, vp, etap):
                                                       - Hv[1:nm1, 0:nm2] * vp[1:nm1, 0:nm2])* rdx)
     return u, v, eta
 
-def periodicbc(ngrid, u, v, eta):
+def periodicbc(ngrid, u, v, eta, Hu, Hv):
     '''do periodic boundary conditions'''
     eta[0, :] = eta[-2, :]
     eta[-1, :] = eta[1, :]
@@ -205,8 +212,18 @@ def periodicbc(ngrid, u, v, eta):
     v[-1, :] = v[1, :]
     v[:, 0] = v[:, -1]
     v[:, -1] = v[:, 1]
+    # Periodic conditions for Hu and Hv
+    Hu[0, :] = Hu[-2, :]
+    Hu[-1, :] = Hu[1, :]
+    Hu[:, 0] = Hu[:, -1]
+    Hu[:, -1] = Hu[:, 1]
+    #
+    Hv[0, :] = Hv[-2, :]
+    Hv[-1, :] = Hv[1, :]
+    Hv[:, 0] = Hv[:, -1]
+    Hv[:, -1] = Hv[:, 1]        
 
-    return u, v, eta
+    return u, v, eta, Hu, Hv
 
 def exchange(u, v, eta, up, vp, etap):
     '''swap new and old values'''
@@ -228,23 +245,27 @@ def plotit(grid, ngrid, dx, x, y, u, v, eta, H0):
 
     shift = {1: (0, 0), 2: (0.5, 0.5), 3: (0.5, 0)}
 
-    fig, ax = plt.subplots(2,2, figsize=(10,10))
+    fig, ax = plt.subplots(2,2, figsize=(14,14))
     for i in range(2):
         ax[1,i].set_xlabel('x (km)')
         ax[i,0].set_ylabel('y (km)')
-    ax[0,0].set_title('$\eta$')
-    ax[0,1].set_title('velocity')
-    ax[1,0].set_title('u')
-    ax[1,1].set_title('v')
-    ax[0,0].contour(x/H0, y/H0, eta.transpose())
-    ax[1,0].contour((x + shift[grid][0] * dx)/H0,
-                  (y + shift[grid][1] * dx)/H0, u.transpose())
-    ax[1,1].contour((x + shift[grid][1] * dx)/H0,
-                  (y + shift[grid][0] * dx)/H0, v.transpose())
-
+    ax[0,0].set_title('Surface Height ($\eta$)')
+    ax[0,1].set_title('Velocity')
+    ax[1,0].set_title('U component')
+    ax[1,1].set_title('V component')
+    plot1 = ax[0,0].contourf(x/H0, y/H0, eta.transpose(), cmap=cm.dense)
+    plot2 = ax[1,0].contourf((x + shift[grid][0] * dx)/H0,
+                  (y + shift[grid][1] * dx)/H0, u.transpose(), cmap=cm.balance)
+    plot3 = ax[1,1].contourf((x + shift[grid][1] * dx)/H0,
+                  (y + shift[grid][0] * dx)/H0, v.transpose(), cmap=cm.balance)
+    cb1=plt.colorbar(plot1, ax=ax[0,0])
+    cb1=plt.colorbar(plot2, ax=ax[1,0])
+    cb1=plt.colorbar(plot3, ax=ax[1,1])
     if grid == 3:
         ax[0,1].quiver(x[1:]/H0, y[1:]/H0,
                        0.5 * (u[1:,1:] + u[:-1,1:]).transpose(),
                        0.5 * (v[1:,1:] + v[1:,:-1]).transpose())
     else:
         ax[0,1].quiver(x/H0, y/H0, u.transpose(), v.transpose())
+    #
+    plt.suptitle(r'Surface Height ($\eta$) and Velocities (U & V) with a Gaussian Seamount')    
