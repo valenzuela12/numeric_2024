@@ -115,20 +115,22 @@ def boundary_conditions(u_array, v_array, h_array, n_grid):
     h_array[n_grid-1] = h_array[n_grid-2]
 
 
-def first_time_step(u, v, h, g, H, dt, dx, ho, gu, gh, n_grid):
+def first_time_step(u, v, h, g, H, dt, dx, ho, gu, gh, n_grid, f):
     """Calculate the first time step values from the analytical
     predictor-corrector derived from equations 4.18 and 4.19.
     """
-    # HERE I added for v, without the same factor as for u, but just by half of the initial ho
     u.now[1:n_grid - 1] = 0
     v.now[1:n_grid - 1] = 0
-    factor = gu * ho / 2
-    midpoint = n_grid // 2
-    v.now[midpoint - 1] = -factor
-    v.now[midpoint] = factor 
-    u.now[midpoint - 1] = -factor
-    u.now[midpoint] = factor
     h.now[1:n_grid - 1] = 0
+    #
+    midpoint = n_grid // 2
+    #
+    u.now[midpoint - 1] = -gu * ho + f * v.now[midpoint - 1] * dt
+    u.now[midpoint] = gu * ho + f * v.now[midpoint] * dt
+    #
+    v.now[midpoint - 1] = -f * u.now[midpoint - 1] * dt
+    v.now[midpoint] = -f * u.now[midpoint] * dt 
+    #
     h.now[midpoint] = ho - g * H * ho * dt ** 2 / (4 * dx ** 2)
 
 
@@ -217,7 +219,7 @@ def rain(args):
     # Calculate the first time step values from the
     # predictor-corrector, apply the boundary conditions, and store
     # the values in the time step results arrays
-    first_time_step(u, v, h, g, H, dt, dx, ho, gu, gh, n_grid)
+    first_time_step(u, v, h, g, H, dt, dx, ho, gu, gh, n_grid, f)
     boundary_conditions(u.now, v.now, h.now, n_grid)
     u.store_timestep(1, 'now')
     v.store_timestep(1, 'now')
