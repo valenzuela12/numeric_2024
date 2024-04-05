@@ -91,22 +91,27 @@ def find_depth2(H0, ngrid):
     return Hu, Hv
 
 def find_depth3(H0, ngrid):
-    X = np.arange(0, ngrid)
-    Y = np.arange(0, ngrid)
+    X = np.arange(1, ngrid)
+    Y = np.arange(1, ngrid)
     X, Y = np.meshgrid(X, Y)
-    R = np.sqrt((X-ngrid/2.1)**2 + (Y-ngrid/2.1)**2)# Centred Gaussian bump
+    # Is in this case the staggered grid equivalent to move the bump -0.5 and +0.5 for Hv in comparison to Hu, so that Hv[i,j] == Hu[i-0.5,j+0.5]
+    R1 = np.sqrt((X-(ngrid)/2)**2 + (Y-(ngrid)/2)**2)# Centred Gaussian bump for the Hu grid
+    R2 = np.sqrt((X+0.5-(ngrid)/2)**2 + (Y-0.5-(ngrid)/2)**2)# Centred (+- 0.5) Gaussian bump for the Hv grid
+
     std_dev = 15.0  # Value to smooth the bottom
     #
-    H1 = (H0*300)*((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
-    H2 = (H0*300)*((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R / std_dev)**2))
+    H1 = (H0*300)*((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R1 / std_dev)**2))
+    H2 = (H0*300)*((1. / (std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * (R2 / std_dev)**2))
     #
-    mean_bump = np.mean(H1)
+    mean_bump_H1 = np.mean(H1)
+    mean_bump_H2 = np.mean(H2)
+
     # Create a condition to make all the boundaries equal (at the same depth)
-    H1[H2 < mean_bump] = mean_bump 
-    H2[H1 < mean_bump] = mean_bump
+    H1[H1 < mean_bump_H1] = mean_bump_H1 
+    H2[H2 < mean_bump_H2] = mean_bump_H2
     # Set the gaussian bump to start from 0 m
-    Hu=H1-mean_bump
-    Hv=H1-mean_bump
+    Hu=H1-mean_bump_H1
+    Hv=H2-mean_bump_H2
     #
     fig = plt.figure(figsize=(14, 7))
     #
